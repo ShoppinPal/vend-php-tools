@@ -35,6 +35,7 @@ Config::getInstance()->set('application.debuggerEnabled', (bool)getenv('IS_TEST_
 function setupMySqlDbConfig($varName, $dbName)
 {
     $parsed = parse_url(getenv($varName));
+
     $config = Config::getInstance();
 
     $config->set(
