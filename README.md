@@ -2,7 +2,7 @@
 
 A simple site to authorise Vend stores and perform actions on them via Vend's API.
 
-[Heroku installation](https://morning-headland-16044.herokuapp.com/stores)
+[Heroku installation](https://morning-headland-16044.herokuapp.com/)
 
 Simple-Legal-Speak
 ==================
