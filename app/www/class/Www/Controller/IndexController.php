@@ -55,7 +55,7 @@ class IndexController extends BaseControllerAbstract
                 $errors['email'] = 'The entered email address is not valid';
             }
 
-            if (!empty($errors)) {
+            if (empty($errors)) {
                 $userId = $userBo->create($username, $password, $email);
                 $this->authenticationHelper->logIn($userId, $username, $email);
                 $this->redirectToRoute('Store', 'List');
