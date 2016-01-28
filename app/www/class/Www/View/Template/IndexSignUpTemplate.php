@@ -31,7 +31,7 @@ class IndexSignUpTemplate extends BaseTemplateAbstract
         $urlHelper = new UrlHelper();
 //-------------------- HTML ------------------ ?>
         <h1>Vend Tools signup</h1>
-        <?php if (empty($this->errors)): ?>
+        <?php if (!empty($this->errors)): ?>
         <div class="error">
             <?= implode('<br />', $this->errors) ?>
         </div>
